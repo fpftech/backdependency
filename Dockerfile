@@ -8,6 +8,8 @@ RUN mkdir -p $APP_PATH \
     build-essential \
     && apt-get autoremove -y
 
+COPY requirements.txt $APP_PATH/requirements.txt
+
 RUN pip install --upgrade pip \
  && pip install --no-cache-dir -r requirements.txt \
  && mkdir -p assets/static
