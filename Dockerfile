@@ -7,8 +7,10 @@ RUN mkdir -p $APP_PATH \
     && apt-get update && apt-get install -y \
     build-essential \
     && apt-get autoremove -y
+    
+COPY postgres_ready.py /    
 
-COPY requirements.txt postgres_ready.py $APP_PATH/
+COPY requirements.txt $APP_PATH/
 
 RUN pip install --upgrade pip \
  && pip install --no-cache-dir -r requirements.txt \
