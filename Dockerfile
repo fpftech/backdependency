@@ -8,9 +8,10 @@ RUN mkdir -p $APP_PATH \
     build-essential \
     && apt-get autoremove -y
 
-COPY requirements.txt postgres_ready.py $APP_PATH/requirements.txt
+COPY requirements.txt postgres_ready.py $APP_PATH/
 
 RUN pip install --upgrade pip \
  && pip install --no-cache-dir -r requirements.txt \
- && mkdir -p assets/static
+ && mkdir -p assets/static \ 
+ && chmod +x ${APP_PATH}/postgres_ready.py
  
