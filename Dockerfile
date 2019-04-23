@@ -15,5 +15,5 @@ COPY requirements.txt ${APP_PATH}/
 RUN pip install --upgrade pip \
  && pip install --no-cache-dir -r requirements.txt \
  && mkdir -p assets/static \ 
- && chmod +x ${APP_PATH}/postgres_ready.py
+ && chmod +x /postgres_ready.py
  
