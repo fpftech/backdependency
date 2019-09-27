@@ -1,33 +1,49 @@
-requests==2.18.4
-cheroot==5.8.3
-CherryPy==11.0.0
+#Postgres connection
+psycopg2==2.8.3
+
+#Handle database credentials like a pro
+dj-database-url==0.5.0
+
+#idiomatic command line interface lib
 click==6.7
-celery==4.1.1
-eventlet==0.22.1
-Django==1.11.6
-django-cors-headers==2.1.0
-django-extensions==1.9.6
-django-filter==1.0.4
-djangorestframework==3.7.1
-WeasyPrint==0.42.3
-freeze==1.0.10
-olefile==0.44
-Pillow==4.3.0
-portend==2.2
-psycopg2==2.7.3.1
-python-dotenv==0.7.1
-pytz==2017.2
+
+#datetime for humans
+python-dateutil==2.7.3
+
+#WSGI Server
+gunicorn==19.8.1
+
+#Django REST API
+django==2.0.5
+pytz==2018.5
 six==1.11.0
-tempora==1.9
+djangorestframework==3.8.2
+django-filter==1.1.0
 djangorestframework-jwt==1.11.0
-openpyxl==2.6.2
-urllib3==1.22
-webencodings==0.5.1
-tinycss2==0.6.1
-amqp==2.2.2
-channels==1.1.6
-asgi-rabbitmq==0.5.5
+PyJWT==1.6.4
+dj-static==0.0.6
+
+#Just for local dev, it will be removed soon
+django-cors-headers==2.1.0
+
+#Extensions to make your Django life easier =)
+django-extensions==2.0.7
+Pygments==2.2.0
+
+#Please, just code DRY Forms
+django-crispy-forms==1.7.2
+
+#Per object permissions - I know you don't need it yet. Just wait for it =)
+django-guardian==1.4.9
+
+#Easy REST API Authentication using Django defaults
+django-rest-auth==0.9.3
+
+#Excel file processing
+openpyxl==2.5.5
+et-xmlfile==1.0.1
+jdcal==1.4
+
 #Lib to help on test data preparation for Django
 model-mommy==1.6.0
 coverage==4.5.1
-gunicorn==19.8.1
