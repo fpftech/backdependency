@@ -1,4 +1,4 @@
-FROM python:3.6.5
+FROM python:3.6.5-alpine3.7
 
 ENV APP_PATH /usr/src/app
 WORKDIR $APP_PATH
